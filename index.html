@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+
 </head>
 
 <body>
+    <!-- https://willhof.github.io/Responsive-Portfolio/ -->
     <h1>Crystal Collector!</h1>
     <p id="gameDesc">
         You will be given a random number at the start of the game.
@@ -30,22 +32,25 @@
         Each time the game starts, the values of the crystals change.
     </p>
     <div id="targetNum"></div>
-    <span>
-        Wins:
-        <span id="winNum"></span>
-    </span>
-    <span>
-        Losses:
-        <span id="lossNum"></span>
-    </span>
-    <div id="imgCollector">
+    <div id="winLoss">
+        <span>
+            Wins:
+            <span id="winNum"></span>
+        </span>
+        <span class="clearfix">
+            Losses:
+            <span id="lossNum"></span>
+        </span>
+    </div>
+    <div id="imgCollector" class="clearfix">
         <img class="crystal" id="blue" value="0" src="assets/images/blue crystal.jpg">
         <img class="crystal" id="dark" value="0" src="assets/images/dark crystal.jpg">
         <img class="crystal" id="purple" value="0" src="assets/images/purple crystal.jpg">
         <img class="crystal" id="red" value="0" src="assets/images/red crystal.jpg">
     </div>
-    <div>Your total score is:</div>
-    <div id="total"></div>
+    <div id="totalContainer">Your total score is:
+        <div id="total"></div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="./assets/javascript/game.js"></script>

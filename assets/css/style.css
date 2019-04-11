@@ -1,4 +1,52 @@
 .crystal{
     height:150px;
 width:150px;
+
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:lightgoldenrodyellow;
+}
+h1{
+    font-size: 3em;
+    background-color:lightgreen;
+    margin: 10px 35% 10px 10px;
+    border-radius: 25px;
+    padding: 10px 0px 10px 10px
+}
+p{
+    font-size: 1.5em;
+    background-color:lightseagreen;
+    margin: 0px 35% 0px 10px;
+}
+.clearfix::before{
+    content:" ";
+    display:block;
+    clear:both;   
+}
+#winLoss{
+    float:left;
+    margin:10px 10px 10px 10px;
+    background-color:lightgreen;
+    padding: 10px 10px 10px 10px;
+    font-size:1.5em;
+    box-sizing: border-box;
+    height:200px;
+    width:200px;
+    border-radius: 25px
+}
+#targetNum{
+    float:left;
+    margin:10px 10px 10px 10px;
+    background-color:lightcoral;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    height: 200px;
+    width:250px;
+    border-radius: 25px;
+}
+#totalContainer{
+    box-sizing: border-box;
+    height:5%;
 }
