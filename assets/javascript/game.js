@@ -15,11 +15,7 @@ $(document).ready(function () {
     $("#winNum").text(wins);
     $("#lossNum").text(losses);
     $("#total").text(total)
-    //want to get this to work but dont know how to properly apply scoping
-    // function sumTotal() {
-    //     total = parseInt($(this).attr("value")) + parseInt(total)
-    //     $("#total").text(total)
-    // }
+
     function reset() {
         targetNum = Math.floor(Math.random() * 111 + 20);
         bcValue = Math.floor(Math.random() * 12 + 1);
